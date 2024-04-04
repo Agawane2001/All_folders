@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <ul>
+        <li>Fisrt</li>
+        <li>Second</li>
+        <li>Third</li>
+    </ul>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>roll</td>
+        </tr>
+        <tr>
+            <td>vaishu</td>
+            <td>101</td>
+        </tr>
+    </table>
+    <script>
+
+
+        //console.log(document.documentElement);
+        //console.log(document.body);
+       // console.log(document.body.childNodes);
+       // console.log(document.body.children);
+        //console.log(document.body.firstElementChild);
+        //console.log(document.body.lastElementChild);
+/*
+        for (node of document.body.children){
+           console.log(document.body.children);
+        }
+
+        const arr = Array.from(document.body.children);
+          console.log(arr);  
+
+        const ultag = document.body.children[0];
+        const first=ultag.children[0]
+        const second = ultag.children[1]
+        console.log(first.nextElementSibling); */
+   const tabletag = document.body.children[1];
+   console.log(tabletag);
+   console.log(tabletag.tBodies[0].rows[0].cells[1].style='background-color:blue');
+    </script>
+</body>
+</html>
